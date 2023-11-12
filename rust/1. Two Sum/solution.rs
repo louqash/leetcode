@@ -1,5 +1,5 @@
-use std::convert::TryInto;
 use std::collections::HashMap;
+use std::convert::TryInto;
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -7,10 +7,7 @@ impl Solution {
         for index in 0..nums.len() {
             let diff: i32 = target - nums[index];
             if let Some(&other_index) = store.get(&nums[index]) {
-                return vec![
-                    index.try_into().unwrap(),
-                    other_index.try_into().unwrap()
-                ];
+                return vec![index.try_into().unwrap(), other_index.try_into().unwrap()];
             } else {
                 store.insert(diff, index);
             }
@@ -18,4 +15,3 @@ impl Solution {
         vec![]
     }
 }
-

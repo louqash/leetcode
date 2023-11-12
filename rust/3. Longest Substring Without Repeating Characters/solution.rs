@@ -22,4 +22,3 @@ impl Solution {
         cmp::max(max, streak)
     }
 }
-

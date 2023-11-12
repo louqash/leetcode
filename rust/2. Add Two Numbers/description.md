@@ -3,7 +3,6 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
- 
 
 ### Example 1:
 
@@ -20,7 +19,6 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 > Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9] \
 > Output: [8,9,9,9,0,0,0,1]
- 
 
 ### Constraints:
 
